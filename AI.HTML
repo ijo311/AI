@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dev@IJO</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+      background: url('https://tse3.mm.bing.net/th?id=OIP.ZOPXpLsWSHmMSSscVa0n4AHaE8&pid=Api&P=0&h=220') no-repeat center center fixed;
+      background-size: cover;
+      color: #00ffcc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 1;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 0.2em;
+      text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+      z-index: 2;
+    }
+
+    .start-button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: rgba(0, 31, 31, 0.8);
+      color: #00ffcc;
+      border: 2px solid #00ffcc;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      text-decoration: none;
+      z-index: 2;
+    }
+
+    .start-button:hover {
+      background-color: rgba(0, 51, 51, 0.9);
+      transform: scale(1.05);
+    }
+
+    .particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .particles span {
+      position: absolute;
+      display: block;
+      width: 4px;
+      height: 4px;
+      background: #00ffcc;
+      animation: animate 10s linear infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes animate {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(-1000px) scale(0.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="particles">
+    <span style="left:10%; animation-delay: 0s;"></span>
+    <span style="left:25%; animation-delay: 1s;"></span>
+    <span style="left:40%; animation-delay: 2s;"></span>
+    <span style="left:60%; animation-delay: 0.5s;"></span>
+    <span style="left:75%; animation-delay: 1.2s;"></span>
+    <span style="left:90%; animation-delay: 2.5s;"></span>
+  </div>
+
+  <h1>🤖 HELLO WORLD</h1>
+  <a class="start-button" href="https://drive.google.com/file/d/1PZTRgAI-YmPKOdtxkwSbao6uOGbdq8Wk/view" target="_blank">
+    LET'S START OUR JOURNEY
+  </a>
+</body>
+</html>
